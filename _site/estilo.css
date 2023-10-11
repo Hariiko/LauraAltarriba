@@ -7,12 +7,13 @@
 body{
     background: #db27a2;
     font-family: sans-serif;
-    height: 100vh; /* Establecer altura al 100% de la ventana del navegador */
+    height: 1000; /* Establecer altura al 100% de la ventana del navegador */
     width: 100%; /* Establecer ancho al 100% del contenedor padre */
 }
 
 a{
     text-decoration: none;
+
 }
 
 .contenedor {
@@ -36,7 +37,7 @@ a{
 /****/
 
 header {
-    padding: 8% 0;
+    padding: 4% 0;
 }
 
 header .logo{
@@ -46,23 +47,26 @@ header .logo{
     float: left;
     color: #ffffff;     
 }
-header .imagen{
 
-}
-
-header .categoria{
+.categoria{
+    /*text-align: center;*/
     display: flex;
     justify-content: center;
-    flex-grow: wrap;
 }
-header .categoria a{
+.categoria a{
+    display: inline-block; /* Hacer que el div sea un bloque en línea */
+  margin-left: auto; /* Margen izquierdo automático */
+  margin-right: auto; /* Margen derecho automático */
     color: #000000;
     margin: 10px 20px;
     font-size: 18px;
     font-weight: 700;
 }
 
-header .categoria a.activo{
+.categoria a.activo{
     color:antiquewhite;
+}
 
+.grid .imagenes-cargadas{
+  opacity: 1;
 }
